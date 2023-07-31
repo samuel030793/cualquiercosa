@@ -7,6 +7,8 @@
 
 
 body{
+    width: 100vw;
+    height: 100vh;
   
 
 
@@ -19,8 +21,7 @@ background: linear-gradient(90deg, rgba(101,78,181,1) 0%, rgba(174,227,238,1) 98
 
 
 .title{
-    width: 100vw;
-    height: 100vh;
+    
     display: flex;
     font-size: 38px;
     font-weight: 700;
