@@ -17,13 +17,27 @@
     <form id="calcForm">
         <label for="peso">Ingresa tu peso (en kg):</label>
         <input type="number" id="peso" required />
+        <label for="planeta">Selecciona un planeta:</label>
+        <select id="planeta">
+            <option value="0.38">Mercurio</option>
+            <option value="0.91">Venus</option>
+            <option value="0.38">Marte</option>
+            <option value="2.34">Júpiter</option>
+            <option value="0.93">Saturno</option>
+            <option value="0.89">Urano</option>
+            <option value="1.12">Neptuno</option>
+        </select>
+
         <button type="button" onclick="calcularMasa()">Calcular</button>
     </form>
+
+
     <div id="resultado"></div>
 
     <script>
         function calcularMasa() {
-            var gravedadTierra = 9.81; // Gravedad en la Tierra en m/s²
+                       
+            var gravedadTierra = value; // Gravedad en la Tierra en m/s²
             var peso = parseFloat(document.getElementById("peso").value);
             peso = peso * gravedadTierra;
             
