@@ -3,7 +3,8 @@ body{
     padding: 0;
 
 
-    background-color: whitesmoke;
+    background: rgb(238,182,174);
+    background: radial-gradient(circle, rgba(238,182,174,1) 0%, rgba(177,174,238,1) 68%, rgba(148,163,233,1) 100%);
     font-family: 'Courier New', Courier, monospace;
 }
 
