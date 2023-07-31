@@ -19,13 +19,13 @@
         <input type="number" id="peso" required />
         <label for="planeta">Selecciona un planeta:</label>
         <select id="planeta">
-            <option value="0.38">Mercurio</option>
-            <option value="0.91">Venus</option>
-            <option value="0.38">Marte</option>
-            <option value="2.34">Júpiter</option>
-            <option value="0.93">Saturno</option>
-            <option value="0.89">Urano</option>
-            <option value="1.12">Neptuno</option>
+            <option value="3.7">Mercurio</option>
+            <option value="8.87">Venus</option>
+            <option value="3.71">Marte</option>
+            <option value="24.79">Júpiter</option>
+            <option value="10.44">Saturno</option>
+            <option value="8.69">Urano</option>
+            <option value="11.15">Neptuno</option>
         </select>
 
         <button type="button" onclick="calcularMasa()">Calcular</button>
@@ -34,15 +34,25 @@
 
     <div id="resultado"></div>
 
+    <div id="resultado2"></div>
+
     <script>
         function calcularMasa() {
-                       
-            var gravedadTierra = value; // Gravedad en la Tierra en m/s²
+            var valorPlaneta = document.getElementById("planeta").value
+            console.log(valorPlaneta)
+            var gravedadTierra = valorPlaneta; // Gravedad en la Tierra en m/s²
             var peso = parseFloat(document.getElementById("peso").value);
             peso = peso * gravedadTierra;
             
             var masa = peso / gravedadTierra;
+            var masaMercurio = peso / valorPlaneta
             document.getElementById("resultado").innerText = "Tu masa es aproximadamente: " + masa.toFixed(2) + " kg";
+
+
+            document.getElementById("resultado2").innerText = "Tu masa es aproximadamente en mercurio: " + masaMercurio.toFixed(2) + " kg";
+
+
+
         }
     </script>
 
