@@ -1,6 +1,13 @@
-body{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+  
 
 
     background: rgb(101,78,181);
@@ -12,10 +19,17 @@ background: linear-gradient(90deg, rgba(101,78,181,1) 0%, rgba(174,227,238,1) 98
 
 
 .title{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     font-size: 38px;
     font-weight: 700;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    color: salmon;
+    justify-content: center;
+    color: white;
+}
+
+.text-title{
+
 }
