@@ -23,8 +23,10 @@
 
     <script>
         function calcularMasa() {
-            var peso = parseFloat(document.getElementById("peso").value);
             var gravedadTierra = 9.81; // Gravedad en la Tierra en m/s²
+            var peso = parseFloat(document.getElementById("peso").value);
+            peso = peso * gravedadTierra;
+            
             var masa = peso / gravedadTierra;
             document.getElementById("resultado").innerText = "Tu masa es aproximadamente: " + masa.toFixed(2) + " kg";
         }
